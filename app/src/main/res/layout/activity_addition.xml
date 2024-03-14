@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Addition">
+
+    <EditText
+        android:id="@+id/num1"
+        android:layout_width="165dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="65dp"
+        android:hint="Number1:"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/num2"
+        android:layout_width="165dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="35dp"
+        android:hint="Number2:"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/num1" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="165dp"
+        android:layout_height="60dp"
+        android:text="Add"
+        android:onClick="add"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginTop="40dp"
+        style="@style/Widget.Material3.Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/num2" />
+    <Button
+        android:id="@+id/next"
+        android:layout_width="165dp"
+        android:layout_height="60dp"
+        android:text="Next"
+        android:onClick="nextActivity"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginTop="40dp"
+        style="@style/Widget.Material3.Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

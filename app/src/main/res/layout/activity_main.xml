@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="155dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="52dp"
+        android:textSize="24sp"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:text="VIT"
+        android:background="@drawable/text_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="155dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="52dp"
+        android:textSize="24sp"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:text="VIT CSE"
+        android:background="@drawable/text_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="155dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="52dp"
+        android:textSize="24sp"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:text="Students"
+        android:background="@drawable/text_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="52dp"
+        android:gravity="center"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+        <Button
+            style="@style/Widget.Material3.Button"
+            android:layout_width="148dp"
+            android:layout_marginEnd="16dp"
+            android:layout_height="48dp"
+            android:backgroundTint="#69B9F8"
+            android:text="Button1"
+            android:textColor="#000"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/nextBtn"
+            style="@style/Widget.Material3.Button"
+            android:layout_width="148dp"
+            android:layout_height="48dp"
+            android:text="Next"
+            android:layout_marginStart="16dp"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:backgroundTint="#69B9F8" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
