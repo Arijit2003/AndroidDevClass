@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CompanySectors"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <ImageButton
+        android:id="@+id/reliance"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:scaleType="fitXY"
+        android:padding="5dp"
+
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/reliance"
+        android:onClick="showPOPUP"/>
+
+    <ImageButton
+        android:id="@+id/microsoft"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:scaleType="fitXY"
+        android:padding="5dp"
+
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/microsoft"
+        android:onClick="showPOPUP"/>
+    <ImageButton
+        android:id="@+id/amazon"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:scaleType="fitXY"
+        android:padding="5dp"
+
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/amazon"
+        android:onClick="showPOPUP"/>
+    <ImageButton
+        android:id="@+id/tataMotors"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:scaleType="fitXY"
+        android:padding="5dp"
+
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/tatamotors"
+        android:onClick="showPOPUP"/>
+    <Button
+        android:layout_margin="@+id/nextBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="next"/>
+
+
+</LinearLayout>
